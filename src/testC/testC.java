@@ -749,7 +749,7 @@ public class testC extends JFrame implements ActionListener, KeyListener {
         historyText.setBackground(Color.lightGray);
         getContentPane().setBackground(Color.black);
  
-        // هنا قلنا أنه لن يتم البقاء فوق أي زر أو نص بعد النقر عليه حتى يظل المستخدم قادراً على إستخدام لوحة المفاتيح
+     
         textField.setFocusable(false);
         historyText.setFocusable(false);
         b0.setFocusable(false);
@@ -1013,7 +1013,6 @@ public class testC extends JFrame implements ActionListener, KeyListener {
             JOptionPane.showMessageDialog(getContentPane(), str, "Keyboard Shortcuts", JOptionPane.PLAIN_MESSAGE);
         }
  
-        // الموجود في شريط القوائم سيتم إظهار نافذة منبثقة فيها معلومات حول البرنامج about عند النقر على الزر
         else if (e.getSource() == about)
         {
             String str = "<html>"
@@ -1021,7 +1020,7 @@ public class testC extends JFrame implements ActionListener, KeyListener {
                         + "<p>Prepared by <b>Tasneem Akkad</b><br><br>" 
                         + "<u>Note</u><br>"
                         + "I used JDK 1.8 to compile the source code.<br><br><br>"
-                        + "<p><i>© Copyright 2017 harmash.com - All Rights Reserved</i></p>"
+                        + "<p><i> © Copyright 2010 </i></p>"
                         + "<html>";
  
             JOptionPane.showMessageDialog(getContentPane(), str, "About", JOptionPane.PLAIN_MESSAGE);
